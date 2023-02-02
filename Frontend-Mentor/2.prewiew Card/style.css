@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 100%;
+    width: 500px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+/* Card image */
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-img img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-img img:active{
+    opacity: 0.5;
+}
+
+/* Card Head */
+.card-head {
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+}
+.card-head .card-header:hover{
+    color: hsl(178, 100%, 50%);
+}
+.card-head .card-header{
+    cursor: pointer;
+}
+
+/* Card-text*/
+.card-text{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.card-text .content-text{
+    color: hsl(215, 17%, 42%);
+    font-size: 16px;
+    padding: 5px 0 10px;
+}
+.card-text .card-icon{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: hsl(178, 100%, 50%);
+    padding-top: 10px;
+}
+.card-text .card-icon .first-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-text .card-icon .second-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text .card-icon .eth-icon, .clock-icon{
+    width: 20px;
+    height: 20px;
+}
+.card-text .card-icon .last-user-log, .content-amaount{
+    padding-left: 0.5rem;
+}
+/* Card Footer */
+.card-foot{
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 0.5px solid hsl(215, 32%, 27%);
+}
+
+.card-foot .user-img{
+    background-color: white;
+    border-radius: 50%;
+    padding: 2px;
+    width: 50px;
+    height: 50px;
+}
+.card-foot .maker{
+    padding-left:15px ;
+    color: hsl(215, 17%, 42%);
+    font-size: 1.2rem;
+}
+.card-foot .nameofMaker{
+    color: hsl(178, 47%, 87%);
+    cursor: pointer;
+}
+.card-foot .nameofMaker:hover{
+    color: hsl(178, 100%, 50%);
+}
+/* footer */
+.attribution{
+    position: absolute; 
+    bottom: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+.attribution a{
+    text-decoration: none;
+}
+.attribution a:hover{
+    color: lightblue;
+}
