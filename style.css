@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hwb(180 25% 25%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1440px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+}
+.quelcode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.quelcode img{
+    padding: 10px;
+    border-radius: 20px;
+    width: 350px;
+    height: 350px;
+}
+.quelcode h2{
+    text-align: center;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.quelcode p{
+    font-size: 15px;
+    opacity: 0.7;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+}
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+@media(max-width:375px){
+    .container{
+        width: 280px;
+    }
+    .quelcode img{
+        border-radius: 20px;
+        width: 250px;
+        height: 300px;
+    }
+    .quelcode h2{
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .quelcode p{
+        font-size: 14px;
+        opacity: 0.7;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+}
